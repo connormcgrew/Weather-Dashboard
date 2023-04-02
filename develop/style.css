@@ -1,14 +1,17 @@
 * 
-
+:root {
+    --white: #fff;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background: #f5f5f5;
+    background: var(--white);
     margin: 0;
     padding: 0;
 }
+/* header */
 header
 {
     background-color: rgb(90, 89, 89);
@@ -16,15 +19,48 @@ header
     border-bottom: 1px solid #eee;
 }
 
+/* main */
 main.dashboard
 {
-    background-color: #f5f5f5;
+    background-color: var(--white);
 }
 
-div
 
-div
-div
+/* searchbar */
+div.recent-searches
+{
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+/* data */
+div.currentWeather {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+span#uv-index{
+    color: var(--white);
+}
+div.fiveDay h2 {
+    font-size: 1.4rem;
+}
 
-div
+div.fiveDay p {
+    font-size: 0.9rem;
+}
 
+div.fiveDay p.card-title {
+   font-weight : bold;
+   color: var(--white);
+}
+.card {
+    background-color: rgb(47, 47, 57);
+}
+.card-subtitle {
+    color: var(--white);
+}
